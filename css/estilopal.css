@@ -35,16 +35,6 @@
     padding: 1vh 0; 
 }
 
-
-
-
-
-
-
-
-
-
-
 .conten{
     display: grid;
     margin: 0px;
@@ -62,15 +52,6 @@
     background-image: url("../img/orden1.png");
     background-size: 100% 100%;
 }
-
-
-
-
-
-
-
-
-
 
 .conten_ventajas{
     grid-column: 8/14;
@@ -132,6 +113,7 @@
     width: 40px;
     text-align: center;
     z-index: 100;
+    cursor: pointer;
 }
 .go .fa{
     height: 100%;
@@ -166,6 +148,10 @@
     grid-row: 10/20;
     background-color: #efefef;
     border: 2px solid #1d1003;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 .conten_img3{
     grid-column: 9/14;
@@ -183,21 +169,11 @@
     grid-row: 15/20;
     background-color: #e2b27e;
     border: 2px solid #1d1003;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 } 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .footer{
     background-color: #1d1003;

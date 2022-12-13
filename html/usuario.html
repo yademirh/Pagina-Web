@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" href="../img/logo2.icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vollkorn&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/usuario.css">
+    <link rel="icon" href="/img/logo2.icon">
+    <title>ORYURLIFE</title>
+</head>
+<body>   
+    <header class="header">
+        <a class="menus" href="../index.html">INICIO</a>
+        <a class="menus" href="horario.html">HORARIO</a>
+        <a class="menus" href="deberes.html">DEBERES</a>
+        <a class="menus" href="eventos.html">EVENTOS</a>
+        <a class="menus" href="habitos.html">HABITOS</a>
+        <a class="menus" href="usuario.html">USUARIO</a>
+        <img class="logo" src="../img/ORYULIFE_logo.png" alt="logo_ORYULIFE">
+    </header>
+
+    <iframe name="iframe"></iframe>
+    <form action="usuario.html" class="form" id="form" method="get" target="iframe">
+
+        <!-- el logo dentro del formulario -->
+        <div class="form_logo">
+            <img class="form_logo-logo" src="../img/ORYULIFE_logo.png" alt="ORYULIFE">
+        </div>
+
+        <!-- inputs y labels -->
+        <div class="form_answer">
+            <div class="sesion_info">
+                <input id="nombre" onkeyup="valid1()" class="inputs" type="text" name="nombre" required>
+                <label for="name" class="sesion_label">Nombre</label> 
+                <i class="fa-solid fa-circle-xmark" id="mal_a"></i>
+                <i class="fa-solid fa-circle-check" id="bien_a"></i>
+            </div>
+            <div class="sesion_info">
+                <input id="apellido" onkeyup="valid2()" class="inputs" type="text" name="apellido" required>
+                <label for="apellido" class="sesion_label">Apellidos</label> 
+                <i class="fa-solid fa-circle-xmark" id="mal_b"></i>
+                <i class="fa-solid fa-circle-check" id="bien_b"></i>
+            </div>            
+            <div class="sesion_info">
+                <input id="email" class="inputs" onkeyup="valid3()" type="email" name="email" required>
+                <label for="email" class="sesion_label">E-mail</label> 
+                <i class="fa-solid fa-circle-xmark" id="mal_c"></i>
+                <i class="fa-solid fa-circle-check" id="bien_c"></i>
+            </div>
+            <div class="sesion_info">
+                <input id="contraseña" onkeyup="valid4()" class="inputs" type="password" name="contraseña" required>
+                <label for="contraseña" class="sesion_label">Contraseña</label>
+                <i class="fa-solid fa-circle-xmark" id="mal_d"></i>
+                <i class="fa-solid fa-circle-check" id="bien_d"></i>
+            </div>
+            <div class="sesion_info">
+                <input id="CFcontraseña" onkeyup="valid5()" class="inputs" type="password" name="CFcontraseña" required>
+                <label for="CFcontraseña" class="sesion_label">Confirmar Contraseña</label>
+                <i class="fa-solid fa-circle-xmark" id="mal_e"></i>
+                <i class="fa-solid fa-circle-check" id="bien_e"></i>
+            </div>
+            <div class="sesion_info--s">
+                <input type="radio" name="sexo" onclick="sexo1()">
+                <label for="Ehombre">Hombre</label>
+                <input type="radio" name="sexo" onclick="sexo1()">
+                <label for="Emujer">Mujer</label>
+            </div>
+            <div class="sesion_info--a">
+                <input name="terminos" type="checkbox" onclick="checkbox()">
+                <label for="terminos">Aceptar <a href="#">Terminos y Condiciones</a></label>
+            </div>
+            <div class="sesion_info--">
+                <input type="submit" class="enviar" value="REGISTRARME" onclick="Datos()"></input>
+            </div>
+             
+        </div>
+
+        <!-- otras formas de ingresar -->
+        <div class="form_with">
+            <div class="form-label">
+                <label for="form_with">INGRESAR CON:</label>
+            </div>
+            <div class="form-icons">
+                <a href="#" class="fa fa-google"></a>
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-windows"></a>
+            </div>
+        </div>
+    </form>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
+    <script src="../javascript/usuario.js"></script>
+</body>
+</html>

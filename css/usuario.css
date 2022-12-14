@@ -1,0 +1,182 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Vollkorn', serif;
+}
+body{
+    background-image: url(../img/fondoUsuario.png);
+    background-size: cover;
+}
+
+.header{
+    position: sticky;
+    background-color:#f1ebde;
+    height: 100px;
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;  
+    margin: 0 auto; 
+    min-height: 70px;
+    border-bottom: 5px solid #1d1003;
+}
+.menus{
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 0.5em;
+    background-color:#1d1003;
+    color: white;
+    font-size:small;  
+    letter-spacing: 1px;  
+    transition: background-color .5s;
+}
+.menus:hover{
+    background-color: white;
+    color: #1d1003;
+    outline: 2px #1d1003 solid;
+}
+.logo{
+    height: 100%;
+    padding: 1vh 0; 
+}
+
+
+.form{
+    position: absolute;    
+    top: 55%;
+    left: 50%;       
+    transform: translate(-50%, -50%);
+    background-color: #f1ebde;
+    border: 2px solid black;
+    padding: 20px;
+    padding-top: 10px;
+    border-radius: 0.5em;
+    height: 550px;
+    width: 400px;
+    display: grid;
+    align-content: space-between;
+    box-sizing: content-box;
+} 
+.form_logo-logo{
+    height: 120px;
+    width: 110px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 5px;
+}
+.form_answer{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    gap: 15px;
+}
+.sesion_info{
+    position: relative;
+}
+.sesion_info i{
+    position: absolute;
+    top: 10px;
+    left: 105%;
+    font-size: 17px;
+    display: none;
+}
+.inputs{
+    padding: 5px;
+    background: none;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #1d1003;
+    font: inherit;
+}
+.sesion_label{
+    font-size: 16px;
+    cursor: pointer;
+    color: darkslategrey;
+    position: absolute;
+    top: 0;
+    left: 5px;
+    padding: 5px;
+    pointer-events: none;
+    transition: all .5s;
+}
+
+.inputs:valid ~ .sesion_label,
+.inputs:focus ~ .sesion_label{
+    transform: translate(0px, -15px);
+    padding: 5px;
+    font-size:small;
+}
+
+/* .inputs:focus + .sesion_label,
+.inputs:not(:placeholder-shown) + .sesion_label{
+    transform: translate(0px, -15px);
+    padding: 5px;
+    font-size:small;
+}  */  /*tambien funciona pero con un pequeño defecto en el email */
+
+.sesion_info--a label a{
+    text-decoration: none;
+    color: #804000;
+}
+.sesion_info--a label a:hover{
+    text-decoration: underline;
+}
+.sesion_info--s{
+    display: flex;
+    gap: 15px;
+}
+.enviar{
+    border-radius: .5em;
+    padding: 5px;
+    border: 2px solid #1d1003;
+    transition: all .5s;
+}
+.enviar:hover{
+    color: #fff;
+    background-color: #1d1003;
+    transition: all .5s;
+}   
+
+
+
+.form_with{
+    display: block;
+    line-height: 2;
+    margin-top: 15px;
+    border-top: 3px solid #000;
+}
+.form-label{
+    height: 30px;
+    font-size: small;
+    background-color: #f1ebde;
+}
+.form-icons{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+.form-icons .fa{
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    width: 35px;
+    line-height: 35px;
+    background-color:#1d1003;
+    border-radius: 50%;
+    transition: .5s;
+    text-decoration: none;
+}
+.form-icons a:hover{
+    background-color: white;
+    color: #1d1003;
+    transition: .5s;
+    outline: 1px solid #000;
+}
+ 
+iframe {
+    display: none;
+}

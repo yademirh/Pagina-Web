@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Vollkorn', serif;
+}
+header{
+    position: sticky;
+    background-color:#f1ebde;
+    height: 100px;
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;  
+    margin: 0 auto; 
+    min-height: 70px;
+}
+.menus{
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 0.5em;
+    background-color:#1d1003;
+    color: white;
+    font-size:small;  
+    letter-spacing: 1px;  
+    transition: background-color .5s;
+}
+.menus:hover{
+    background-color: white;
+    color: #1d1003;
+    outline: 2px #1d1003 solid;
+}
+.logo{
+    height: 100%;
+    padding: 1vh 0; 
+}
